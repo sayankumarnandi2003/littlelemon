@@ -51,49 +51,52 @@ bash
 python manage.py runserver
 
 Then navigate to http://127.0.0.1:8000/ in your browser to access the application.
-
-📂 Project Directory Structure
 littlelemon/
 │
-├── littlelemon/                 # Project configuration directory
+├── littlelemon/               # Project configuration directory
 │   ├── __init__.py
 │   ├── asgi.py
-│   ├── settings.py              # Core settings & app configuration
-│   ├── urls.py                  # Root URL routing
+│   ├── settings.py           # Core settings & app configurations
+│   ├── urls.py               # Root URL routing
 │   └── wsgi.py
 │
-├── restaurant/                  # Core restaurant application
-│   ├── admin.py                 # Django admin registrations
+├── restaurant/                # Core restaurant application
+│   ├── admin.py               # Django admin registrations
 │   ├── apps.py
-│   ├── forms.py                 # BookingForm model form definition
-│   ├── models.py                # Database models (Booking, Menu)
-│   ├── tests.py                 # Unit tests
-│   ├── urls.py                  # App-level URL routing
-│   ├── views.py                 # Request handlers & template renderers
+│   ├── forms.py               # BookingForm model form definition
+│   ├── models.py              # Database models (Booking, Menu)
+│   ├── tests.py               # Unit tests
+│   ├── urls.py               # App-level URL routing
+│   ├── views.py              # Request handlers & template renderers
 │   │
-│   ├── static/                  # Static assets
+│   ├── static/                # Static assets
 │   │   ├── css/
 │   │   │   └── style.css
-│   │   └── img/                 # Restaurant & menu image assets
+│   │   └── img/               # Restaurant & menu image assets
 │   │
-│   └── templates/               # HTML templates
+│   └── templates/             # HTML templates
 │       ├── about.html
 │       ├── base.html
 │       ├── book.html
 │       ├── index.html
-│       └── partials/            # Header & footer partials
-│           ├── _header.html
-│           └── _footer.html
+│       └── partials/          # Header & footer partials
+│           ├── _footer.html
+│           └── _header.html
 │
-├── db.sqlite3                   # SQLite database file
-├── manage.py                    # Django management script
+├── db.sqlite3                 # SQLite database file
+├── manage.py                  # Django management script
 ├── Pipfile
-└── README.md                    # Project documentation
+└── README.md                  # Project documentation
+
+
+
 🗺️ Roadmap
  Define and migrate the Menu model referenced in views.py
  Add a dynamic menu listing page
  Add form validation feedback and a booking confirmation page
  Deploy to a production host (e.g. Render, Railway, or PythonAnywhere)
+
+
 🤝 Credits & Acknowledgments
 
 Special thanks to:
